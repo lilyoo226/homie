@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/try/try2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose</title>
+    <style>
+      body {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      .boosu {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 20px;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+      }
+      .linea {
+        margin: 0px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+      }
+      .homie-picture {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50px;
+        display: inline-block;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+      }
+      .user {
+        align-items: center;
+        width: 200px;
+        height: 50;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 2px;
+      }
+      .name {
+        font-family: "arial", Courier, monospace;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .username {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .main-message {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        margin: 0px;
+      }
+      .heart-main {
+        font-size: 20px;
+      }
+      .preview {
+        display: flex;
+        flex-direction: column;
+
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        padding: 12px;
+        padding-left: 5px;
+      }
+      .c1 {
+        display: flex;
+        margin: 0px;
+        font-size: 40px;
+      }
+      .c2 {
+        display: flex;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .each {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boosu">
+      <div class="linea">
+        <div>
+          <img class="homie-picture" src="./choose_files/homie.jpg" alt="">
+        </div>
+        <div class="user">
+          <p class="name">Homie</p>
+          <p class="username">@samuellove226</p>
+        </div>
+      </div>
+      <div class="message">
+        <p class="main-message">
+          Which side of me did you meet first
+          <span class="heart-main">❤️</span>
+        </p>
+      </div>
+      <div class="each">
+        <div>
+          <div class="preview">
+            <p class="c1">😁</p>
+            <p class="c2">Talkative</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview">
+            <p class="c1">🙈</p>
+            <p class="c2">Shy</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview">
+            <p class="c1">🥰</p>
+            <p class="c2">Friendly</p>
+          </div>
+        </div>
+      </div>
+      <div class="each">
+        <div>
+          <div class="preview">
+            <p class="c1">😒</p>
+            <p class="c2">Boring</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview">
+            <p class="c1">😢</p>
+            <p class="c2">Crazy</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview">
+            <p class="c1">😡</p>
+            <p class="c2">Rude</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
